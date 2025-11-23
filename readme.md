@@ -1,6 +1,9 @@
 # Overview
 This terraform project allows you to quickly provision virtual networks, subnets, and VMs on Azure. By default, the project configures two virtual networks, which each have one subnet and one VM. You can very easily provision more networks, subnets, or VMs by adding only a few lines of code to either vm.tf or network.tf, as the provisioning of each resource is done with for_each, allowing for easy scalability.
 
+**NOTE:** Only the first two virtual networks have peering configured by default. For any additional virtual networks, peerings will need to be manually provisioned.
+
+
 The project was based off of [this](https://www.youtube.com/watch?v=NFi4XIFSJqc) tutorial YouTube video.
 
 ## Steps
